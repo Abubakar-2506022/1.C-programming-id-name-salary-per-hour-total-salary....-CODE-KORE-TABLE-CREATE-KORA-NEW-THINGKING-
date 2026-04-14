@@ -1,0 +1,25 @@
+#include<stdio.h>
+ int main(){
+     printf("\t\tThis is your official UNIT CONVERTER(Easy and fast)\n\n");
+     float v,m,mph,kps;
+    printf("Please enter the VELOCITY(in kph) \n I will convert it (in mps or mph or kps or what u want):\t");
+  scanf("%f",&v);
+  m=(v*1000)/3600;
+  mph=(v*1000);
+  kps=(v/3600);
+   printf("+---------------+----------------+----------------+---------------+\n");
+   printf("|%.4f kph       |=%.4f mps       |=%.4f mph       |=%.4f kps      |\n",v,m,mph,kps);
+   printf("+---------------+----------------+----------------+---------------+     \n");
+   float f,celcius,kelvin,reumer;
+   Printf("Please enter TEMPARATURE(in Farenheight)\n I will convert it (in Celcius or kelvin or what u want):\t");
+   scanf("%f",&f);
+   celcius=((f-32)*100)/180;
+   kelvin=celcius+273;
+   reumer=celcius*80/100;
+   printf("+-----------------------+----------------+----------------+---------------+\n");
+   printf("|%.4f Farenheight  |=%.4f Celcius  |=%.4f Kelvin   |=%.4f Reumer     |\n",f,celcius,kelvin,reumer);
+   printf("+-----------------------+----------------+----------------+---------------+     \n");
+
+
+   return 0;
+   Add C programing;
