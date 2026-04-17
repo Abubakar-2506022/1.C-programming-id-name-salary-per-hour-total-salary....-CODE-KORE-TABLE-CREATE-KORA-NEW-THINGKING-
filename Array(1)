@@ -28,6 +28,26 @@
 
 
 
+#include<stdio.h>
+ int main(){
+   int marks[3];
+   printf("enter the price of Yougart:");
+   scanf("%d",&marks[0]);
+   printf("enter the price of Pizza:");
+   scanf("%d",&marks[1]);
+   printf("enter the price of Hotdog:");
+   scanf("%d",&marks[2]);
+   int total=(marks[0]+marks[1]+marks[2]);
+   total=total+total*0.15;
+   printf("The final cost(with some vat)=%d",total);
+
+
+
+
+ }
+
+
+
 
 
  }
