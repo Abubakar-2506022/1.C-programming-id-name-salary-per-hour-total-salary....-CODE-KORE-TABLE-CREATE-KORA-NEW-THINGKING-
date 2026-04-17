@@ -1,0 +1,33 @@
+#include<stdio.h>
+ int main(){
+   int marks[6];
+   printf("enter physics(1st) marks:");
+   scanf("%d",&marks[0]);
+   printf("enter physics(2nd) marks:");
+   scanf("%d",&marks[1]);
+   printf("enter chemistry(1st) marks:");
+   scanf("%d",&marks[2]);
+   printf("enter chemistry(2nd) marks:");
+   scanf("%d",&marks[3]);
+   printf("enter math(1st) marks:");
+   scanf("%d",&marks[4]);
+   printf("enter math(2nd) marks:");
+   scanf("%d",&marks[5]);
+   printf("Your Physics mark is:%d\n",marks[0]+marks[1] );
+   printf("Your chemistry mark is:%d\n",marks[2]+marks[3] );
+   printf("Your math mark is:%d\n",marks[4]+marks[5] );
+   float percent=((marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5])/6);
+   printf("Your PCM average is=%.3f%\n",percent);
+   if (percent>=90){
+    printf("\t\tYou are eligible for BUET admission test\n");
+   }
+   else{
+    printf("\t\tYou are  not eligible for BUET admission test\n");
+   }
+   return 0;
+
+
+
+
+
+ }
