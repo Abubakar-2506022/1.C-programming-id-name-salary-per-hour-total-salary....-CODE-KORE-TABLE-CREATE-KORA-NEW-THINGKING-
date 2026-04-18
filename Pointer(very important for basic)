@@ -110,4 +110,16 @@ int main(){
  }
 
 
+//pointer ero increment /decrement hoy(tobe seta address er kintu bujte hobe...value ek kom/beshi hobe seita address er moddhe effect rakhbe)
+#include<stdio.h>
+int main(){
+    float a=3.14159256;
+    float *ptr=&a;
+    printf("%u\n",ptr);
+    printf("%u\n",++ptr);
+    printf("%u\n",ptr--);
+    printf("%d\n",ptr);
 
+
+//same vabeo character type data and integer type data er o increment decremnet possible
+}
