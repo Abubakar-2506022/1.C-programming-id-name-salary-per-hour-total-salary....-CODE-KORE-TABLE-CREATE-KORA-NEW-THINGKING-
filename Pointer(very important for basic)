@@ -1,0 +1,85 @@
+#include<stdio.h>
+int main(){
+
+ int prices=750;
+ int *ptr=&prices;
+ int _prices=*ptr;
+  printf("%p\n",&prices);//address hexa
+   printf("%u\n",&prices);//address int(unsigned int)
+  printf("%d\n",*(&prices));//value of adress(750)
+  printf("%d\n",_prices);//value(750)
+  printf("%p\n",ptr);//(address hexa)
+   printf("%d\n",*ptr);//value(750)
+  printf("%u\n",&_prices);//address(vinno hoya uchit)
+
+
+
+
+
+
+}
+
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+ char a='f';
+ char *ptr=&a;
+ char _a=*ptr;
+ printf("%p\n",&a);//address hexa
+printf("%u\n",&a);//address int
+printf("%p\n",ptr);//address hexa
+printf("%u\n",ptr);//address int(..... all same)
+printf("%c\n",*ptr);//character(f)
+printf("%u\n",*ptr);//eita sera cilo(but integer e asbe eita sure)
+printf("%c\n",_a);//charcter(f)
+
+
+ return 0;
+}
+
+
+
+#include<stdio.h>
+int main(){
+
+ int *ptr;
+ int x;
+ ptr=&x;
+ *ptr=0;
+ printf("x =%d\n",x);
+ printf("*ptr =%d\n",*ptr);
+ *ptr+=5;
+ printf("x =%d\n",x);
+ printf("*ptr =%d\n",*ptr);
+ (*ptr)++;
+ printf("x =%d\n",x);
+ printf("*ptr =%d\n",*ptr);
+ return 0;
+}
+
+
+// problem no.37print the value of i=5,,,,from its pointer to pointer_safety
+#include<stdio.h>
+#include<math.h>
+int main(){
+ int i=5;
+ int *ptr=&i;
+ int  **pptr=&ptr;
+ printf("i =%d\n",i);
+ printf("*ptr= %d\n",*ptr);
+ printf("**pptr= %d\n\n\n",**pptr);
+
+//38. swap 2 numbers (according to 3 method,1.basic 2.calling by function(value) 3.call by referance)
+ //1.
+ int a,b,t;
+ a=6;
+ b=7;
+ printf("a=%d\t",a);
+ printf("b=%d\n",b);
+ t=a;
+ a=b;
+ b=t;
+ printf(" Now a=%d\t",a);
+ printf(" Now b=%d\n",b);
+}
