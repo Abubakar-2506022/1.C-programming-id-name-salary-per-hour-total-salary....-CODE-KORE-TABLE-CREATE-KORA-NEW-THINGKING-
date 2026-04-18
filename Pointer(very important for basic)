@@ -83,3 +83,31 @@ int main(){
  printf(" Now a=%d\t",a);
  printf(" Now b=%d\n",b);
 }
+
+
+
+
+// varaible swapping by function(call by value)......swapped by pointer(just kisui na *lagai deoa)
+
+#include<stdio.h>
+ void swap(int *x,int *y);
+ int main(){
+     int x=6;
+     int y=9;
+    printf("x=%d\t",x);
+    printf("y=%d\t",y);
+
+  swap(&x,&y);
+
+ }
+ void swap(int *x,int *y){
+ int t=*x;
+ *x=*y;
+ *y=t;
+ printf("x=%d\t",*x);
+ printf("y=%d\t",*y);
+
+ }
+
+
+
