@@ -115,6 +115,39 @@ void printTable(int n);
  }
 
 
+#include<stdio.h>
+#include<math.h>// 1&2 is direct(print) 3 is from return (concept is making a function that returns x*y as result...then using it in main function)
+float pi=3.1416;
+void area_c(int r,float pi);
+void area_s(int a);
+int area_r(int x,int y);
+ int main(){
+ int r=5;
+ int a=6;
+ int x=6;
+ int y=7;
+ area_c(r,pi);
+ area_s(a);
+ int ar_r=area_r( x, y);
+ printf("the area of rectangle=%d",ar_r);
+
+ }
+ void area_c(int r,float pi){
+  float area$c=pi*r*r;
+  printf("area of circle=%.3f\n",area$c);
+
+
+ }
+  void area_s(int a){
+  float area$s=a*a;
+  printf("area of square=%.3f\n",area$s);
+
+
+ }
+ int area_r(int x,int y){
+  return x*y;
+
+ }
 
 
 
