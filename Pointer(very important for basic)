@@ -123,3 +123,23 @@ int main(){
 
 //same vabeo character type data and integer type data er o increment decremnet possible
 }
+
+
+
+//pointer ero subtract /comparison hoy(tobe seta address er kintu bujte hobe...value ek kom/beshi hobe seita address er moddhe effect rakhbe)
+#include<stdio.h>
+int main(){
+    int age=18;
+    int *ptr=&age;
+    int _age=20;
+    int *_ptr=&_age;
+    printf("%u and \t%u \n difference is=%d\n",ptr,_ptr,*_ptr-*ptr);
+
+    printf(" Comparison of %u and \t%u \n is=%d",ptr,_ptr,*ptr==*_ptr);
+
+
+}
+    
+
+
+
